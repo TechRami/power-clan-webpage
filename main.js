@@ -8,9 +8,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 // importing dat gui
 
-import * as dat from 'dat.gui';
+// import * as dat from 'dat.gui'; 
 
-const gui = new dat.GUI();
+// const gui = new dat.GUI();
 const world = {
     plane: {
         width: 400,
