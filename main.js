@@ -6,9 +6,27 @@ import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 
 
+
 // importing dat gui
 
 // import * as dat from 'dat.gui'; 
+let input = document.querySelector('.playerName'); 
+let playerName = document.querySelector('.dynamic-text')
+input.addEventListener('input', resizeInput); 
+resizeInput.call(input); 
+
+function resizeInput() {
+    
+
+    if(input.value.length > 12) {
+        playerName.style.width = input.value.length * 0.91 + "ch";
+    } else {
+        playerName.style.width = input.value.length + "ch";
+    }
+  }
+
+
+
 
 // const gui = new dat.GUI();
 const world = {

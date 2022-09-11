@@ -60,16 +60,77 @@
   z-index: 2;
 }
 
+.navbar .left-icons a {
+  text-decoration: none;
+  margin-right: 25px;
+  font-size: var(--fs-sm);
+  color: var(--black-primary);
+  font-weight: var(--fw-semi-bold);
+  transform: scale(0);
+  transition: color 0.3s, transform 0.3s ;
+}
+
+#reportForum{
+  color: var(--black-primary);
+  transition: color 0.3s, transform 0.3s;
+  position: relative;
+}
+
+#reportForum:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--orange-primary);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+#reportForum:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#reportForum:hover{
+  color: var(--orange-primary);
+}
 
 .navbar .left-icons a svg{
   fill: var(--black-primary);
   cursor: pointer;
-  transition: all 0.3s;
+  transition: color 0.3s, transform 0.3s ;
+}
+
+.navbar .left-icons .gg:hover{
+  color: var(--orange-primary);
+  transform: scale(1.2);
 }
 
 .navbar .left-icons a svg:hover{
   fill: var(--orange-primary);
-  transform: scale(1.1);
+  transform: scale(1.2);
+}
+
+.red-star {
+  color: red;
+}
+
+.modal-desc p {
+  font-size: 13px;
+  padding-top: 8px;
+  text-decoration: underline;
+  color: var(--black-primary);
+  
+}
+
+.dynamic-text {
+  border: none;
+  color: var(--black-primary);
+  pointer-events: none;
+  outline: none;
 }
 
 
@@ -84,6 +145,7 @@
   display: grid;
   place-items: center;
   height: 100%;
+  width: 100%;
 }
 
 .con{
@@ -107,7 +169,6 @@
   overflow: hidden;
   border-right: .15em solid var(--orange-primary);
   white-space: nowrap;
-  
   animation: 
   typing 5s steps(20, end) infinite, blink-caret .75s step-end infinite;;
   width: 0;
@@ -171,6 +232,7 @@
 .extras { /* THE SECTION CONTAINER*/
   /* height: 100%;
   width: 100%; */
+  transition: opacity 0.8s;
 }
 
 .extras .main-img{
@@ -256,6 +318,15 @@
 
 @media screen and (max-width: 796px){
   .infinite {
+    opacity: 0;
+  }
+}
+
+
+
+
+@media screen and (min-height: 1080px) {
+  .extras  {
     opacity: 0;
   }
 }
