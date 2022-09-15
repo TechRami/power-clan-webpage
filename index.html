@@ -30,21 +30,21 @@
                   </div>
                   <div class="col mt-4 modal-desc">
                     <label for="report-type" >Why are you reporting <input class="dynamic-text" type="text" name="player" value="">? <span class="red-star">*</span></label>
-                    <textarea placeholder="Your Message" class="form-control mt-2" name="message" rows="10" required></textarea>
-                    <label class="mt-4" for="file">Please upload evidence</label>
+                    <textarea placeholder="Example: FFFHunter banned me for only saying the n word 20 times in the chat!" class="form-control mt-2" name="message" rows="10" required></textarea>
+                    <label class="mt-4 d-block">Please upload evidence</label>
                     <!-- <input class="mt-3" name="attachment" type="file" accept="video/mp4,video/x-m4v,video/*">  -->
-                    <input class="mt-2" type="file" name="attachment" accept="image/png, image/jpeg">
-                    <p>please note that if you want to upload a video, you must upload it on Youtube and post the link within the message field above. or share it via <a href="https://discord.gg/zEGmXdmnsn">Discord.</a> </p>
+                    <input id="file" class="mt-2 hidden" type="file" name="attachment" accept="image/png, image/jpeg">
+                    <label for="file" class="btn btn-primary mt-2">Upload Image</label>
+                    <p class="mt-2">please note that if you want to upload a video, you must upload it on Youtube and post the link within the message field above. or share it via <a href="https://discord.gg/zEGmXdmnsn">Discord.</a> </p>
                   </div>
                 </div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary">Save changes</button>
+                <button type="submit" class="btn btn-primary">Submit Report</button>
               </div>
             </form>
           </div>
-         
         </div>
       </div>
     </div>
@@ -61,8 +61,8 @@
           <div class="line"></div>
           <div class="line right-line"></div>
         </div>
-        <div class="navbar">
-            <div class="container w-90">
+        <div class="navbar w-90">
+            <div class="container test ">
               <div class="left-icons">
                 <a href="https://discord.gg/zEGmXdmnsn">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" class="bi bi-discord" viewBox="0 0 16 16">
@@ -78,26 +78,23 @@
 
               </div>
               <div class="right-icons">
-                <a href="#">
+                <a href="#" class="menu active-menu">
                   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#202020" class="bi bi-grid-3x3-gap-fill" viewBox="0 0 16 16">
                     <path d="M1 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V2zM1 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V7zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V7zM1 12a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1v-2zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-2z"/>
                   </svg>
                 </a>
               </div>
             </div>
-           
         </div>
         
-        <div class="content container-fluid w-100">
-         
+        <div class="content container w-90">
+          <img src="https://s5.gifyu.com/images/powLogo.gif" alt="powLogo.gif" border="0" />
             <div class="con">
               <p class="typed-out">play. win. repeat.</p>
             </div>
-            <img src="https://s5.gifyu.com/images/powLogo.gif" alt="powLogo.gif" border="0" />
-        
         </div>
 
-        <div class="extras container-fluid w-100">
+        <div class="extras container w-100">
           <img class="main-img" src="./bf1-image-2.png" alt="bf1 image.png">
           <img class="sec-img" src="./bf1-image.png" alt="bf1-image.png">
           <a href="https://discord.gg/zEGmXdmnsn">join us</a>
