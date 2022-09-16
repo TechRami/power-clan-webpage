@@ -12,6 +12,8 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 // import * as dat from 'dat.gui'; 
 let input = document.querySelector('.playerName'); 
 let playerName = document.querySelector('.dynamic-text')
+let navIcon = document.querySelector('.menu');
+let mobileNav = document.querySelector('.mobile-nav')
 input.addEventListener('input', resizeInput); 
 resizeInput.call(input); 
 
@@ -25,6 +27,14 @@ function resizeInput() {
     }
   }
 
+
+navIcon.addEventListener('click', activateMenu)
+
+function activateMenu() {
+    navIcon.classList.toggle('is-active');
+    mobileNav.classList.toggle('is-active');
+
+}
 
 
 
