@@ -80,17 +80,17 @@
 }
 
 .bi-paypal{
-  transition: opacity 3.3s;
+  transition: opacity 0.3s, visibility 0.3s;
 }
 
 #reportForum{
-  transition: background-color 0.3s, padding 0.3s, opacity 0.3s;
+  transition: background-color 0.3s, padding 0.3s, visibility 0.3s, opacity 0.3s;
   position: relative;
   padding: 10px 25px;
   background-color: var(--black-primary);
   color: var(--white-color);
   font-weight: var(--fw-semi-regular);
-  opacity: 1;
+  visibility: visible;
 
 }
 
@@ -149,7 +149,8 @@
 
 .menu {
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+  visibility: hidden;
 }
 
 .menu .bar, .menu::after, .menu::before {
@@ -481,13 +482,16 @@
 
   .menu{
     opacity: 1;
+    visibility: visible;
   }
 
   .bi-paypal{
     opacity: 0;
+    visibility: hidden;
   }
 
   #reportForum{
+    visibility: hidden;
     opacity: 0;
   }
 }
